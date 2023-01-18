@@ -1,7 +1,15 @@
 *{
-    color:black;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+a:link
+{
+    text-decoration: none;
+
 }
 body{
+    overflow: scroll;
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -9,8 +17,10 @@ body{
     height: 100vh;
     background-size: cover;
 }
+/* Nav Bar related */
 .nav-bar
-{
+{   background-color: black;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
@@ -22,31 +32,35 @@ body{
     font-weight: bolder;
     margin: auto;
     flex-grow: 1;
+    color: white;
     padding-left: 3rem;
 
 }
 .nav-bar-link
 {
-    margin: 1rem;
-    
+    margin: 1rem;;
     font-weight: bolder;
-    color: black;
+    transition: .2s;
     padding: .3rem;
 
 }
 .nav-bar-link:hover
 {
     text-decoration: underline;
+    background-color: white;
+    color: black;
 
 }
 .nav-bar-link-selected
 {
     text-decoration: underline;
 }
+/*Nav Bar related End*/
 
+/*Index Page and Main */
 .main
 {   flex-grow: 1;
-    
+    color: black;
     flex-direction: column;
     justify-content: center;
     display: flex;
@@ -54,14 +68,15 @@ body{
     
 }
 .main-index-section
-{   
+{   color: black;
     display: flex;
     margin-top: 1rem;
+
     justify-content: center;
 }
 .h1
 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bolder;
 }
 .p
@@ -71,24 +86,122 @@ body{
 }
 .main-index-section-button
 {   font-size: 1rem;
-    border: solid black 0.1rem;
+    font-weight: bold;
+    border: black solid .2rem;
+    color: black;
     border-radius: 1rem;
     padding: .5rem;
     margin-left: 1.5rem;
 
 
 }
+/*End of Main Page*/
 
-.main-index-section-button
-{   font-size: 1rem;
-    border: solid black 0.1rem;
-    border-radius: 1rem;
-    padding: .5rem;
-    margin-left: 1.5rem;
-
-}
 .footer
-{
+{   padding: .5rem;
     display: flex;
+    background-color: black;
+
     justify-content: center;
+}
+
+/*places page start*/
+.main-place
+{
+    justify-content: start;
+}
+.main-places-cards
+{   
+    display: flex;
+    justify-content: space-around;
+    
+    flex-flow: wrap;
+}
+
+.main-places-card
+{   border: solid black .5rem;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: white;
+    max-width: 300px;
+}
+.main-places-header
+{   font-size: 24px;
+    font-weight: bolder;
+    background-color: black;
+
+    text-align: center;
+    color: white;
+    padding: .3rem;
+}
+.main-places-content
+{   margin: .5rem;
+    color: black;
+    display: flex;
+    text-align: center;
+    font-weight: 400;
+}
+.main-places-img
+{  object-position: center;
+    object-fit: cover;
+    width: 100%;
+    
+}
+/*End of places page*/
+
+/*Start of contact page */
+.main-contact
+{   color: black;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-contact-form
+{   color: black;
+    display: flex;
+    background-color: white;
+    border: .5rem solid ;
+    padding-left: 2rem;
+    padding-right:2rem ;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    margin: 1rem;
+    
+}
+.contact-header
+{   color: black;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+.contact-form-name
+{   text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+}
+.contact-form-element
+{
+    margin-bottom: 2rem;
+}
+
+input[type='text']{color:black;font-size: 1.2rem;}
+
+.contact-form-submit
+{   outline: none;
+    border: solid white .3rem;
+    background-color: black;
+    border: solid black 1;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: .2s;
+}
+
+.contact-form-submit:hover
+{   border: solid black.3rem;
+    background-color: white;
+    color: black;
+    padding: 1rem;
 }
