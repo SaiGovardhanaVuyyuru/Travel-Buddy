@@ -129,7 +129,6 @@ body{
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    background-color: white;
     max-width: 300px;
 }
 .main-places-header
@@ -146,7 +145,10 @@ body{
     color: black;
     display: flex;
     text-align: center;
-    font-weight: 400;
+    font-weight: bolder;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .main-places-img
 {  object-position: center;
@@ -166,7 +168,7 @@ body{
 .main-contact-form
 {   color: black;
     display: flex;
-    background-color: white;
+    background-color:transparent;
     border: .5rem solid ;
     padding-left: 2rem;
     padding-right:2rem ;
@@ -200,8 +202,9 @@ input[type='text']
 
 .contact-form-submit
 {   outline: none;
-    border: solid white .3rem;
+    border: solid black .3rem;
     background-color: black;
+    font-weight: bold;
     border: solid black 1;
     border-radius: 1rem;
     padding: 1rem;
@@ -242,7 +245,7 @@ input[type='text']
     
 }
 .main-service-header
-{   min-width: 140px;
+{   min-width: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,6 +256,7 @@ input[type='text']
 .main-service-content
 {   font-size: 1.2rem;
     padding: 1rem;
-    background-color: white;
-    color:black;
+    background-color: transparent;
+    color:white;
+    font-weight: bold;
 }
