@@ -95,6 +95,11 @@ body{
 
 
 }
+.main-index-section-button:hover
+{
+    background-color: black;
+    color: white;
+}
 /*End of Main Page*/
 
 .footer
@@ -187,7 +192,11 @@ body{
     margin-bottom: 2rem;
 }
 
-input[type='text']{color:black;font-size: 1.2rem;}
+input[type='text']
+{
+    color:black;font-size: 1.2rem;
+    
+}
 
 .contact-form-submit
 {   outline: none;
@@ -204,4 +213,46 @@ input[type='text']{color:black;font-size: 1.2rem;}
     background-color: white;
     color: black;
     padding: 1rem;
+}
+
+/*End of Contant Page */
+
+/*Start of services Page*/
+
+.main-service
+{
+    justify-content: start;
+}
+
+.main-service-cards
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.main-service-card
+{   margin-bottom: 1rem;
+    display: flex;
+    border: .5rem black solid;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 800px;
+    
+}
+.main-service-header
+{   min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: black;
+}
+.main-service-content
+{   font-size: 1.2rem;
+    padding: 1rem;
+    background-color: white;
+    color:black;
 }
