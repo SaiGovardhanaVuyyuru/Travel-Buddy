@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/index.css" rel="stylesheet">
+    
     <title>Travel Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </head>
-<body background="./resources/night.webp">
+<body style="background-repeat: no-repeat; background-size: cover;" background="./resources/night.webp">
     
     <!-- START OF NAIVGATION BAR-->
     <div class="container-fluid">
@@ -46,50 +46,48 @@
     <!-- END OF NAIVGATION BAR-->
     
     <!-- START OF MAIN CONTENT-->
-    <div class="main main-contact">
-        <div class="h1 main-index-section">
+    <div class="d-flex min-vh-100 flex-column align-items-center justify-content-around text-white ">
+        <div class="h1 fw-bolder mt-2 main-index-section text-black">
             Feel Free To Contact Us
         </div>
         
-        <form class="main-contact-form">
-            <div class="contact-header">Contact Form</div>
-            <div class="contact-form-element">
-                <div class="contact-form-name">
+        <form class="shadow-lg d-flex flex-column bg-white p-5 border-3 rounded-5">
+                <div class="text-primary contact-header text-center h2 col-auto">Contact Form</div>
+
+                <div class="contact-form-name text-black h4 text-center mt-3">
                     Name
                 </div>
-                <input type="text">
+                <input placeholder="Enter Name" class="form-control" type="text">
 
-            </div>
-            <div class="contact-form-element">
-                <div class="contact-form-name">
+            
+            
+                <div class="contact-form-name text-black h4 text-center mt-3">
                     Email
                 </div>
-                <input type="text">
+                <input placeholder="Enter Email" class="form-control" type="email">
 
-            </div>
-            <div class="contact-form-element">
-                <div class="contact-form-name">
+            
+            
+                <div class="contact-form-name text-black h4 text-center mt-2">
                     Mobile
                 </div>
-                <input type="text">
-            </div>
-            <div class="contact-form-element">
-                <div class="contact-form-name">
+                <input type="text" placeholder="Enter Mobile" class=" form-control">
+            
+            
+                <div class="contact-form-name text-black h4 text-center mt-2">
                     Gender
                 </div>
-                <input name="gender" type="radio"><span style="color: black;">M</span>
-                <input name="gender" type="radio"><span style="color: black;">F</span>
-                <input name="gender" type="radio"><span style="color: black;">Other</span>
-            </div>
-            <div class="contact-form-element">
-                <input type="button" class="contact-form-submit" value="SUBMIT">
-                
-            </div>
+                <div class="d-flex justify-content-center">
+                    <input name="gender" checked="true"  class="form-check-input"  type="radio"><span class="me-3" style="color: black;">M</span>
+                    <input name="gender" class="form-check-input" type="radio"><span class="me-3" style="color: black;">F</span>
+                    <input name="gender" class="form-check-input" type="radio"><span class="me-3" style="color: black;">Other</span>
+                </div>
+                <input type="submit" class="btn btn-primary mt-2" value="Submit">
         </form>
     </div>
     <!-- END OF MAIN CONTENT-->
 
-    <div class="p footer">
+    <div class="d-flex justify-content-center bg-black text-white fw-bolder h4 m-0 p-2">
         Copyright@2023
     </div>
 
