@@ -13,12 +13,35 @@
 <body background="./resources/night.webp">
     
     <!-- START OF NAIVGATION BAR-->
-    <div class="nav-bar">
-        <span class="nav-bar-title">TRAVEL BLOG</span>
-        <a href="./index.html" class="nav-bar-link">HOMEPAGE</a>
-        <a href="./services.html"  class="nav-bar-link">SERVICES</a>
-        <a class="nav-bar-link nav-bar-link-selected">CONTACT</a>
-        <a href="./places.html" class="nav-bar-link">PLACES</a>
+    <div class="container-fluid">
+        <div class="row bg-black justify-content-between">
+                <span class=" h3 my-2 text-md-start text-center  col-md-4 d-flex justify-content-center align-items-center col-sm-12 col-8 my-2 text-white">TRAVEL BLOG</span>
+                
+                <!-- This render when only size >=sm -->
+                <div class="container-fluid col d-sm-block  d-none">
+                    <div class="row justify-content-md-end justify-content-center">
+                        <a href="./index.html" class=" col-auto m-2 align-self-center btn btn-outline-light">HOMEPAGE</a>
+                        <a href="./services.html" class="col-auto m-2 align-self-center btn btn-outline-light">SERVICES</a>
+                        <a href="./contact.html" class="col-auto m-2 align-self-center btn btn-outline-light">CONTACT</a>
+                        <a href="./places.html" class="col-auto m-2 align-self-center btn btn-outline-light ">PLACES</a>
+                    </div>
+                </div>
+
+                <!--This renders when only size<sm-->
+                    <div class="dropdown  col-3 my-2 align-self-center justify-content-end  d-sm-none">
+                        <a class="btn btn-outline-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            &#8801
+                        </a>
+                      
+                        <ul class="dropdown-menu bg-black" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item bg-black text-white" href="./index.html">Homepage</a></li>
+                          <li><a class="dropdown-item bg-black text-white" href="./services.html">Services</a></li>
+                          <li><a class="dropdown-item bg-black text-white" href="./contact.html">Contact</a></li>
+                          <li><a class="dropdown-item bg-black text-white" href="./places.html">Places</a></li>
+                        </ul>
+                      </div>
+
+        </div>
     </div>
     <!-- END OF NAIVGATION BAR-->
     
