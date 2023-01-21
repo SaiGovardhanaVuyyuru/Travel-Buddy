@@ -26,8 +26,12 @@ function renderNavBar()
 
 }
 function logout()
-{
+{   
+    ToastDisplay(`Bye ${JSON.parse(localStorage.getItem('currentUser')).name} :(`,'bg-success');
+
     localStorage.removeItem('currentUser');
+    
+    setTimeout(()=>window.location.reload(),1500);
 }
 let dropDownUser=document.body.querySelector('#signOut').querySelectorAll('a');
 let signOut=dropDownUser[dropDownUser.length-1];

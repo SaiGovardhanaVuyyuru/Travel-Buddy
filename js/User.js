@@ -13,6 +13,8 @@ function getUser(email)
 {
     let users=getUsers();
     for(let x of users)
+        if(x.email==email)
+            return x;
 
     return null;
 }

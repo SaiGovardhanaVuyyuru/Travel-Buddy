@@ -1,3 +1,12 @@
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return true;
+  }
+    
+    return false;
+}
 
 function validate()
 {
@@ -5,19 +14,27 @@ function validate()
     let password=document.querySelector("#password").value;
     if(email.length==0||password.length==0)
         {
-            let toast=Toastify({ className:'bg-danger fw-5 border-3 rounded-3',text: "Please Enter fields",duration: 3000,gravity:'bottom',position:'center'})
-        
-            toast.showToast();
+           ToastDisplay("Please enter the fields.","bg-danger");
+
             return ;
         }
+    if(!ValidateEmail(email))
+    {
+        ToastDisplay("Please enter a valid email","bg-danger");
+    }
     let user=getUser(email);
+    
     if(user == null)
     {   
-
-        let toast=Toastify({ className:'bg-danger fw-5 border-3 rounded-3',text: "Couldn't Find User",duration: 3000,gravity:'bottom',position:'center'})
-        
-        toast.showToast();
+        ToastDisplay("Couldn't find user.","bg-danger");
         return ;
+    }
+    if(!Login(email,password))
+        ToastDisplay("Incorrect Password Bro!!","bg-danger");
+    else
+    {  
+        ToastDisplay(`Welcome ${user.name} Bro!!`,"bg-success");
+        setTimeout(()=>window.location.replace('/'),1500);
     }
 
 }
