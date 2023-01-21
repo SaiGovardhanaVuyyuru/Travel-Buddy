@@ -1,4 +1,4 @@
 # Travel-Buddy
 Project undergone During DB internship.
 
-GithubPage : https://saigovardhanavuyyuru.github.io/Travel-Buddy/
+Project live at:http://13.235.115.143/

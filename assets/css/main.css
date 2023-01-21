@@ -1990,3 +1990,16 @@ section {
  }
 
  *{transition: .2s;}
+
+.myservicesdiv
+{ transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(100vh);
+  opacity: 0;
+}
+ .myservicesdivactive
+ {  
+  transform: translateY(0);
+  opacity: 1;
+  
+  
+ }
