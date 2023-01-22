@@ -8,7 +8,23 @@ function getUsers()
 
     return users;
 }
+function editUser(user)
+{
+    let users=getUsers();
+    console.log(user);
+    for(let i=0;i<users.length;i++)
+        if(user.email == users[i].email )
+        {   users[i].address=user.address;
+            users[i].dob=user.dob;
+            users[i].name=user.name;
+            console.log('Found User',users[i]);
+            localStorage.setItem('users',JSON.stringify(users));
+            Login(users[i].email,users[i].password);
+            break;
+        }
 
+    
+}
 function getUser(email)
 {
     let users=getUsers();
