@@ -34,7 +34,7 @@ function validate()
     else
     {  
         ToastDisplay(`Welcome ${user.name} Bro!!`,"bg-success");
-        setTimeout(()=>window.location.replace('/'),1500);
+        setTimeout(()=>window.location.replace('index.html'),1500);
     }
 
 }

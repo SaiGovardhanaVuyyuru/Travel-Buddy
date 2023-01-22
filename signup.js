@@ -51,7 +51,7 @@ function ValidateSignUp()
             addUser(name,email,password);
             Login(email,password);
             ToastDisplay("User successfully signed up!!!","bg-success");
-            setTimeout(()=>window.location.replace('/'),1500);
+            setTimeout(()=>window.location.replace('index.html'),1500);
 
         }
         catch(E)
