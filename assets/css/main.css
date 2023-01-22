@@ -9,12 +9,12 @@
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
-/* Fonts */
+/* Fonts 
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Poppins", sans-serif;
-}
+}*/
 
 /* Colors */
 :root {
@@ -35,7 +35,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-default);
+  /*font-family: var(--font-default);*/
   color: var(--color-default);
 }
 
@@ -48,15 +48,14 @@ a:hover {
   color: #406aff;
   text-decoration: none;
 }
-
+/*
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
-}
+  font-family: var(--font-primary);*/
 
 /*--------------------------------------------------------------
 # Sections & Section Header
@@ -151,7 +150,7 @@ section {
   font-size: 56px;
   font-weight: 500;
   color: #fff;
-  font-family: var(--font-secondary);
+  /*font-family: var(--font-secondary);*/
 }
 
 .breadcrumbs .page-header p {
@@ -326,7 +325,7 @@ section {
   margin: 0;
   font-weight: 700;
   color: #fff;
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
 }
 
 /*--------------------------------------------------------------
@@ -355,7 +354,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-family: var(--font-primary);
+    /*font-family: var(--font-primary);*/
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
@@ -500,7 +499,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 12px 20px;
-    font-family: var(--font-primary);
+    /*font-family: var(--font-primary);*/
     font-size: 16px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.7);
@@ -657,7 +656,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 32px;
-  font-family: var(--font-secondary);
+  /*font-family: var(--font-secondary);*/
   color: #001f8d;
 }
 
@@ -868,7 +867,7 @@ section {
 }
 
 .call-to-action .cta-btn {
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -955,7 +954,7 @@ section {
   font-size: 48px;
   color: var(--color-primary);
   font-weight: 400;
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
   margin-bottom: 25px;
 }
 
@@ -1008,7 +1007,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 500;
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
   transition: 0.3s;
   border: 1px solid var(--color-primary);
 }
@@ -1250,7 +1249,7 @@ section {
 .stats-counter .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
   font-size: 15px;
   font-weight: 500;
   color: var(--color-secondary);
@@ -1335,7 +1334,7 @@ section {
   font-size: 48px;
   color: var(--color-primary);
   font-weight: 400;
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
   margin-bottom: 25px;
   text-align: center;
 }
@@ -1392,7 +1391,7 @@ section {
   font-size: 16px;
   font-weight: 500;
   transition: 0.3s;
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
 }
 
 .horizontal-pricing .buy-btn:hover {
@@ -1849,7 +1848,7 @@ section {
 .hero .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
   font-size: 15px;
   font-weight: 600;
 }
@@ -1879,12 +1878,12 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #fff;
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
 }
 
 .footer .footer-info p {
   font-size: 14px;
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
 }
 
 .footer .social-links a {
