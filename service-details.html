@@ -36,10 +36,13 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <link rel="stylesheet" href="./assets/css/toast.css">
+  <script src="./services/servicedata.js"></script>
+  <script src="./services/replaceSpaces.js"></script>
   <script src="./assets/js/toast.js"></script>
   <script src="./js/MyToast.js"></script>
   <script src="./js/RenderAuth.js" defer></script>
   <script src="serviceDetailsRender.js" defer></script>
+  <script src="servicedetails.js" defer></script>
   <!-- <script defer src="./servicedetails.js"></script> -->
 </head>
 
@@ -114,10 +117,8 @@
         <div class="row gy-4" id="service-container">
 
           <div class="col-lg-4" id="service-details-nav">
-            <div class="services-list">
-              <a id="transportLink"  class="myservices active">Transport</a>
-              <a id="hotelsLink"  class="myservices">Hotels</a>
-              <a id="toursLink"  class="myservices">Tours</a>
+            <div class="services-list" id="service-details-nav-items">
+
             </div>
           </div>
         

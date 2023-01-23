@@ -7,7 +7,7 @@ function renderCard(serviceName,serviceIcon,serviceDescription)
         <div>
           <h4 class="title">${serviceName}</h4>
           <p class="description">${serviceDescription}</p>
-          <a href="service-details.html#${serviceName}F" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+          <a href="service-details.html#${replaceSpaces(serviceName)}F" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
         </div>
       </div>`
 
@@ -26,19 +26,5 @@ return renderedString;
 
 }
 
-let xyz={
-    "Transport":
-    {
-        "service-description":"Reach your destinations with ease. Choose from various modes Of transport that satisfy your needs.",
-        "service-icon":"fa-cab"   
-    },
-    "Hotels":
-    {   
-        "service-description":"Choose from a variety of hotels for accomidations that best suits your requirements.",
-        "service-icon":"fa-hotel"
-    }
 
-
-};
-
-serviceContainer.innerHTML= renderCards(xyz);
+serviceContainer.innerHTML= renderCards(globalThis.staticServices);

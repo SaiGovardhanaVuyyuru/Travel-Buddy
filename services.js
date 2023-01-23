@@ -21,7 +21,7 @@ function renderCard(serviceName,serviceImg,serviceDescription)
       <div class="card-img">
         <img src="${serviceImg}" alt=""  class="card-img-top">
       </div>
-      <h3><a href="service-details.html#${serviceName}F" class="stretched-link">${serviceName}</a></h3>
+      <h3><a href="service-details.html#${replaceSpaces(serviceName)}F" class="stretched-link">${serviceName}</a></h3>
       <p>${serviceDescription}</p>
     </div>
   </div><!-- End Card Item -->`
@@ -41,24 +41,9 @@ return renderedString;
 
 }
 
-let xyz={
-    "Transport":
-    {
-        "service-description":"Reach your destinations with ease. Choose from various modes Of transport that satisfy your needs.",
-        "service-icon":"fa-cab",   
-        "service-img":"./assets/img/bus.jpg"
-    },
-    "Hotels":
-    {   
-        "service-description":"Choose from a variety of hotels for accomidations that best suits your requirements.",
-        "service-icon":"fa-hotel",
-        "service-img":"./assets/img/hotels.jpg"
-    }
 
 
-};
-
-serviceContainer.innerHTML= renderCards(xyz);
+serviceContainer.innerHTML= renderCards(globalThis.staticServices);
 let elements=document.querySelectorAll('.mycard');
 console.log(elements);
 elements.forEach(x=>x.onmouseenter=onMouseOver);
