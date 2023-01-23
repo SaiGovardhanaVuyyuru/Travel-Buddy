@@ -39,6 +39,7 @@
   <script src="./assets/js/toast.js"></script>
   <script src="./js/MyToast.js"></script>
   <script src="./js/RenderAuth.js" defer></script>
+  <script src="indexRender.js" defer></script>
 </head>
 
 <body>
@@ -144,36 +145,9 @@
     <section id="featured-services" class="featured-services">
       <div class="container">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-cab"></i></div>
-            <div>
-              <h4 class="title">Transport</h4>
-              <p class="description">Reach your destinations with ease. Choose from various modes Of transport that satisfy your needs. </p>
-              <a href="service-details.html#transports" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-building"></i></div>
-            <div>
-              <h4 class="title">Hotels</h4>
-              <p class="description">Choose from a variety of hotels for accomidations that best suits your requirements.</p>
-              <a href="service-details.html#hotelsF" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-map-location-dot"></i></div>
-            <div>
-              <h4 class="title">Tours</h4>
-              <p class="description">We take care of your transport, accomidation, sight seeing. Make you journey and vacation easier.</p>
-              <a href="service-details.html#toursF" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
+        <div class="row gy-4" id="service-container">
+          <!-- TO BE RENDERED IN indexRender-->
+      
         </div>
 
       </div>
