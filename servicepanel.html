@@ -42,8 +42,9 @@
   <script src="./assets/js/toast.js"></script>
   <script src="./js/MyToast.js"></script>
   <script src="./js/User.js"></script>
-  <script src="./signup.js" defer></script>
+  <script src="./services/servicedata.js"></script>
   <script src="./admin/admindetails.js" defer></script>
+  <script src="./admin/servicepanel.js" defer></script>
 </head>
 
 <body>
@@ -83,7 +84,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Sign Up</h2>
+              <h2>Service Panel</h2>
              
             </div>
           </div>
@@ -93,7 +94,7 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Sign Up</li>
+            <li>Service Panel</li>
           </ol>
         </div>
       </nav>
@@ -101,7 +102,7 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-        <h1 class="h1 text-center">Lets Get You Enrolled</h1>
+        <h1 class="h1 text-center">Edit Services</h1>
       <div class="container" data-aos="fade-up">
 
 
@@ -113,23 +114,40 @@
           <div class="col">
             <form class="php-email-form">
               <div class="row">
-
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                
+                <div class="col-md-6 form-group mt-3 ">
+                    Service Name
+                  <input type="text" class="form-control" name="email" id="service-name" placeholder="Service Name" required>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                <div class="col-md-6 form-group mt-3 ">
+                    Service Image
+                    <input type="text" class="form-control" name="name" id="service-img" placeholder="Service Image URL" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 ">
+                    Service Icon
+                    <input type="text" class="form-control" name="name" id="service-icon" placeholder="Service Icon" required>
                   </div>
         
               <div class="col-md-6 mt-3  form-group">
-                <input type="password" name="password" class="form-control" id="password" placeholder="Your Password" required>
+                Service Description
+                <input type="text" name="service-description" class="form-control" id="service-description" placeholder="Service Description" required>
               </div>
               <div class="col-md-6 mt-3  form-group">
-                <input type="password" name="repassword" class="form-control" id="repassword" placeholder="Retype Your Password" required>
+                Service Detail Page Image
+                <input type="text" name="service-details-img" class="form-control" id="service-details-image" placeholder="Service Details Image" required>
+              </div>
+              <div class="col-md-6 mt-3  form-group">
+                Service Details Title
+                <input type="text" name="service-details-title" class="form-control" id="service-details-title" placeholder="Service Details Title" required>
+              </div>
+              <div class="col-md-6 mt-3  form-group">
+                Service Details Description
+                <input type="text" name="service-details-description" class="form-control" id="service-details-description" placeholder="Service Details Description" required>
               </div>
               </div>
 
-              <div class="text-center"><div class="btn btn-primary" id="signUp" >Sign Up</div></div>
+              <div class="text-center"><div class="btn submit mt-3 btn-primary" id="signUp" >Submit</div></div>
+              <div class="text-center"><div class="delete mt-3 btn  btn-danger" id="signUp" >Delete</div></div>
             </form>
           </div><!-- End Contact Form -->
 

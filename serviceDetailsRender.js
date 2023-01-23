@@ -39,6 +39,6 @@ return renderedString;
 }
 
 
-
-serviceContainer.innerHTML+= renderCards(globalThis.staticServices);
-let navContainer=document.querySelector('#service-details-nav-items').innerHTML=renderNav(globalThis.staticServices);
+let services=JSON.parse(localStorage.getItem("services"));
+serviceContainer.innerHTML+= renderCards(services);
+let navContainer=document.querySelector('#service-details-nav-items').innerHTML=renderNav(services);

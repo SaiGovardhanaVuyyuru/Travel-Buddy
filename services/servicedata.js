@@ -28,4 +28,10 @@ let staticServices={
 
 
 };
-globalThis.staticServices=staticServices;
+if(localStorage.getItem("services")==null)
+{
+    localStorage.setItem("services",JSON.stringify(staticServices));
+    console.log("SAVED services");
+}
+else
+    console.log("ALREADY THERE");

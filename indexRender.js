@@ -26,5 +26,5 @@ return renderedString;
 
 }
 
-
-serviceContainer.innerHTML= renderCards(globalThis.staticServices);
+let services=JSON.parse(localStorage.getItem("services"));
+serviceContainer.innerHTML= renderCards(services);

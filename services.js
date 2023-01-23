@@ -42,8 +42,8 @@ return renderedString;
 }
 
 
-
-serviceContainer.innerHTML= renderCards(globalThis.staticServices);
+let services=JSON.parse(localStorage.getItem("services"));
+serviceContainer.innerHTML= renderCards(services);
 let elements=document.querySelectorAll('.mycard');
 console.log(elements);
 elements.forEach(x=>x.onmouseenter=onMouseOver);

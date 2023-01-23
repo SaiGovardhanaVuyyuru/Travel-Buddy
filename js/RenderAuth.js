@@ -16,6 +16,10 @@ function renderNavBar()
         {
             signInButton.classList.add('d-none');
             console.log(user.name);
+            if(user.email=='admin@admin.com')
+            {   
+                signOutButton.querySelector('ul').innerHTML='<li><a href="userpanel.html">Users Panel</a></li><li><a href="servicepanel.html">Service Panel</a></li>'+signOutButton.querySelector('ul').innerHTML;
+            }
             signOutButton.querySelector('span').innerText=user.name;
             signOutButton.querySelector('span').style.fontWeight="bolder";
             signOutButton.querySelector('span').style.color="white";
@@ -33,7 +37,7 @@ function logout()
     
     setTimeout(()=>window.location.reload(),1500);
 }
+renderNavBar();
 let dropDownUser=document.body.querySelector('#signOut').querySelectorAll('a');
 let signOut=dropDownUser[dropDownUser.length-1];
 signOut.onclick=logout
-renderNavBar();
